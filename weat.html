@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather UI</title>
+  <style>
+    body {
+      background: linear-gradient(to top, #fbc2eb, #a6c1ee);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .card {
+      width: 300px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      color: white;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .city h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+    .city p{
+        font-size: 10px;
+    }
+
+    .temp p {
+      font-size: 30px;
+      margin: 0;
+    }
+    .icon{
+        height: 24px;
+        width: 24px;
+        background-color: lightyellow;
+        border-radius: 50%;
+    }
+    .low{
+        color: blue;
+    }
+    .tab{
+        display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      font-size: 12px;
+      border-bottom: 5px solid rgba(255,255,255,0.2);
+      padding-bottom: 5px;
+    }
+    .tab span {
+      opacity: 0.6;
+    }
+    .tab span.active {
+      text-decoration: underline;
+      opacity: 1;
+    }
+    .forecast{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    
+    }
+    .time {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+    }
+    .fcon{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="city">
+        <h1>San Francisco</h1>
+        <p>15 April 2025</p>
+        <div class="icon"></div>
+      </div>
+      <div class="temp">
+        <p>72°</p>
+        <div class="range">81°/<span class="low"></span>57°</span></div>
+      </div>
+    </div>
+    <div class="tab">
+    <span class="active">Hours</span>
+    <span>Daily</span>
+    <span>Details</span>
+    <span>Preception</span>
+    <span>...</span>
+</div>
+<div class="forecast">
+    <div class="time">
+    <span>Now</span>
+    <span>11AM</span>
+    <span>12AM</span>
+    <span>1PM</span>
+    <span>2PM</span>
+</div>
+</div>
+<div class="fcon">
+    <div>
+        <div class="icon" style="background-color: yellow;"></div>
+        <p>22</p>
+    </div>
+    <div>
+        <div class="icon" style="background-color: yellow;"></div>
+        <p>21</p>
+    </div>
+    <div>
+        <div class="icon" style="background-color:whitesmoke;"></div>
+        <p>24</p>
+    </div>
+    <div>
+        <div class="icon" style="background-color: yellow;"></div>
+        <p>28</p>
+    </div>
+</div>
+  </div>
+</body>
+</html>
